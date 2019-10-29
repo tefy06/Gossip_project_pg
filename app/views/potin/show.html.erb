@@ -1,0 +1,25 @@
+<p>Welcome</p>
+
+
+<table class="table table-bordered">
+	<tbody>
+		<tr>
+			<td> Auteur </td> 
+			<td> <%= link_to "#{@potin.user.first_name}", "/author_bio/#{@potin.user.first_name}" %> </td>
+		</tr>
+		<tr>
+			<td> Titre</td>
+			<td> <%= @potin.title %></td>
+		</tr>
+
+		<tr>
+			<td> Contenu</td>
+			<td> <%= @potin.content %></td>
+		</tr>
+
+		<tr>
+			<td> Création</td>
+			<td> <%= @potin.created_at %></td>
+		</tr>
+	</tbody>
+</table>

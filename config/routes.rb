@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  #get 'contact/show_contact'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'author_bio/:user_name', to: 'author_bio#show'
+  get '/home', to: 'home#show'
+  get '/home/:name', to: 'home#show'
+  get '/potin/show/:gossip_id', to: 'potin#show'
+  get '/welcome/:first_name', to: 'welcome#show'
   get '/team', to: 'team#show_team'
 
   get '/contact', to: 'contact#show_contact'
