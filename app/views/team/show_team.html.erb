@@ -1,0 +1,42 @@
+
+<h1>Team's Presentation</h1>
+
+<p> 
+	Gossip project developped by : <br>
+	<table>
+		<thead>
+			<tr>
+				<th>Team's firstname</th>
+				<th>Team's lastname</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @team_list.each do |item| %>
+			  <tr>
+			    <td><%= item.first_name %></td>
+			    <td><%= item.last_name %></td>
+			  </tr>
+			<%end%>
+		</tbody>
+	</table>
+</p>
+<!-- <table class="table table-bordered table-team">
+    <thead>
+      <tr class="table-team-header">
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>Github</th>
+      </tr>
+    </thead>
+    <tbody>
+<% @team_list.each do |item| %>
+  <tr>
+    <td><%= item.first_name %></td>
+    <td><%= item.last_name %></td>
+    <td><%= item.email %></td>
+		<td><%= item.github_url %></td>
+  </tr>
+<%end%>
+    </tbody>
+</table>  -->

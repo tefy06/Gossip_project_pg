@@ -1,0 +1,4 @@
+<p>Nous contactez?</p>
+<% @team_list.each do |item| %>
+	<p> Numéro Téléphone de <%= item.first_name %>  <%= item.last_name %> : <%= item.phone_number%></p>
+<%end%>
